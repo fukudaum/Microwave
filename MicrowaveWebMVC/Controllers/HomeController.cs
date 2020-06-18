@@ -17,7 +17,8 @@ namespace MicrowaveWebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Microwave Web MVC app for Benner's Test.";
+            ViewData["Developer"] = "Gustavo Fukuda";
 
             return View();
         }
