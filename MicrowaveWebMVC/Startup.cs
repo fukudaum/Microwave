@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using MicrowaveWebMVC.Models;
 
 namespace MicrowaveWebMVC
 {
@@ -33,6 +35,9 @@ namespace MicrowaveWebMVC
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<MicrowaveWebMVCContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MicrowaveWebMVCContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

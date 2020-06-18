@@ -5,8 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\ProgramTypes\**" />
+    <Content Remove="Views\ProgramTypes\**" />
+    <EmbeddedResource Remove="Views\ProgramTypes\**" />
+    <None Remove="Views\ProgramTypes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\ProgramTypes\Create.cshtml" />
+    <None Include="Views\ProgramTypes\Delete.cshtml" />
+    <None Include="Views\ProgramTypes\Details.cshtml" />
+    <None Include="Views\ProgramTypes\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
   </ItemGroup>
 
 </Project>

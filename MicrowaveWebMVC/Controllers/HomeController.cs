@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MicrowaveWebMVC.Models;
+using MicrowaveWebMVC.Models.ViewModels;
 
 namespace MicrowaveWebMVC.Controllers
 {

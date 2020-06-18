@@ -1,6 +1,6 @@
 using System;
 
-namespace MicrowaveWebMVC.Models
+namespace MicrowaveWebMVC.Models.ViewModels
 {
     public class ErrorViewModel
     {
